@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
     int n, choise;
-    char tiep, stop;
+    char tiep;
 
     do {
         system("cls"); // Clear screen (optional, may not work on all systems)
@@ -23,11 +23,7 @@ int main() {
         if (choise < 1 || choise > 5) {
             cout << "ban chon sai chuc nang, vui long nhap lai.";
         }
-        cout << "(neu ban muon thoat khoi CT hay nhan phim X/x, ban muon nhap lai hay bam phim bat ki) ";
-        cin >> stop;
-        if(stop == 'x' || stop == 'X'){
-            return 0;
-        }
+        
         
     } while (choise < 1 || choise > 5);
         cout << "Hay nhap so n: \n";
